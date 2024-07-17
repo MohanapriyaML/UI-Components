@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface EcAccordionProps {
+export interface UiAccordionProps {
     id: string;
     expanded: boolean;
     title: string;
