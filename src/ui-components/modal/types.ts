@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface EcModalProps {
+export interface UiModalProps {
   handleClose: () => void;
   isOpen: boolean;
   children: React.ReactNode;

@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { Typography } from "@mui/material";
-import EcButton from "../ui-components/button/EcButton";
-import EcDialog from "../ui-components/dialog/EcDialog";
-import EcModal from "../ui-components/modal/EcModal";
+import UiButton from "../ui-components/button/UiButton";
+import UiDialog from "../ui-components/dialog/UiDialog";
+import UiModal from "../ui-components/modal/UiModal";
 
 const CheckComponents = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,25 +28,25 @@ const CheckComponents = () => {
   return (
     <>
       <div>
-        <EcButton onClick={handleOpenModal} variant="contained" color="primary">
+        <UiButton onClick={handleOpenModal} variant="contained" color="primary">
           <Typography>Open Modal</Typography>
-        </EcButton>
-        <EcModal isOpen={isModalOpen} handleClose={handleCloseModal}>
+        </UiButton>
+        <UiModal isOpen={isModalOpen} handleClose={handleCloseModal}>
           <Typography>Just Content Sayyyy in Modal</Typography>
-        </EcModal>
+        </UiModal>
       </div>
       <br/>
       <div>
-        <EcButton
+        <UiButton
           onClick={handleOpenDialog}
           variant="contained"
           color="primary"
         >
           <Typography>Open Dialog</Typography>
-        </EcButton>
-        <EcDialog open={isDialogOpen} handleClose={handleCloseDialog}>
+        </UiButton>
+        <UiDialog open={isDialogOpen} handleClose={handleCloseDialog}>
         <Typography>Just Content Sayyyy in Dialog</Typography>
-        </EcDialog>
+        </UiDialog>
       </div>
     </>
   );

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { UpButtonProps } from '../button/types';
+import { UiButtonProps } from '../button/types';
 
-export interface EcDropdownProps {
+export interface UiDropdownProps {
     items: dropdownProps[];
     button: buttonProp;
 }
@@ -12,7 +12,7 @@ export interface dropdownProps {
     children: string | React.ReactNode;
 }
 
-export interface buttonProp extends UpButtonProps {
+export interface buttonProp extends UiButtonProps {
     children: string | React.ReactNode;
   
 }

@@ -1,10 +1,11 @@
 'use client';
 
 import { Controller } from 'react-hook-form';
-import { EcFormsProps} from './types';
-import EcInput from '../inputs/EcInputs';
+import { UiFormsProps} from './types';
+import UiInput from '../inputs/UiInputs';
+import React from 'react';
 
-const FormInput = (props: EcFormsProps) => {
+const FormInput = (props: UiFormsProps) => {
     const { id, name = 'UpInput', control, rules, errorText, prefix, sufix, showCheckIcon } = props;
 
     return (
@@ -14,7 +15,7 @@ const FormInput = (props: EcFormsProps) => {
             rules={rules}
             defaultValue=""
             render={({ field: { onChange, value, ref } }) => (
-                <EcInput
+                <UiInput
                     {...ref}
                     id={id ? id : name}
                     fullWidth

@@ -1,7 +1,7 @@
 import { OptionsProps } from '../select/types';
 import React from 'react';
 
-export type EcFormsProps = {
+export type UiFormsProps = {
     id?: string;
     name?: string;
     control: any;
@@ -43,4 +43,5 @@ export type  FormPhoneNumberInputProps = {
     control?: any;
     rules?: any;
     errorText?: React.ReactNode;
+    label?: string;
 };

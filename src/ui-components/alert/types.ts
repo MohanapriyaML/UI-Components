@@ -1,5 +1,5 @@
 import React from "react";
-export interface UpAlertProps {
+export interface UiAlertProps {
   title?: string;
   severity?: "success" | "warning" | "error" | "info";
   variant?: "standard" | "filled" | "outlined";
@@ -7,7 +7,7 @@ export interface UpAlertProps {
   onClose?: () => void;
   children: string | React.ReactNode;
 }
-export type UpAlertPropsTest = {
+export type UiAlertPropsTest = {
   title: string;
   severity?: "info" | "success" | "warning" | "error";
   onClose: () => void;

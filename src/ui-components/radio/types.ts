@@ -1,4 +1,4 @@
-export type EcRadioProps = {
+export type UiRadioProps = {
     className?: string;
     name: string;
     value: string;

@@ -1,11 +1,11 @@
 import React from 'react'
-import EcLinks from '../ui-components/link/EcLinks'
+import UiLinks from '../ui-components/link/UiLinks'
 
 const Link = () => {
   return (
     <div>
       <h1>Link</h1>
-      <EcLinks href='https://www.google.com'>Visit the Website</EcLinks>
+      <UiLinks href='https://www.google.com'>Visit the Website</UiLinks>
     </div>
   )
 }

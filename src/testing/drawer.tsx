@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 import React, { Children, useState } from 'react';
-import EcDrawer from '../ui-components/drawer/EcDrawer';
+import UiDrawer from '../ui-components/drawer/UiDrawer';
 
 const Drawer = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -17,9 +17,9 @@ const Drawer = () => {
         <div>
             <h1>Drawer</h1>
             <Button onClick={handleDrawerOpen}>open</Button>
-            <EcDrawer title="Drawer Items" open={isOpen} onClick={handleDrawerClose}>
-                
-            </EcDrawer>
+            <UiDrawer title="Drawer Items" open={isOpen} onClick={handleDrawerClose}>
+                Drawer items
+            </UiDrawer>
         </div>
     );
 }

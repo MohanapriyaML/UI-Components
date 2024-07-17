@@ -2,7 +2,8 @@ import { Controller } from 'react-hook-form';
 import { UnInputSelectProps } from './types';
 import { useCallback } from 'react';
 import { FormHelperText } from '@mui/material';
-import EcSelect from '../select/EcSelect';
+import UiSelect from '../select/UiSelect';
+import React from 'react';
 
 const FormInputSelect = (props: UnInputSelectProps) => {
     const { id, name = 'UpInput', control, rules, options = [], errorText } = props;
@@ -25,7 +26,7 @@ const FormInputSelect = (props: UnInputSelectProps) => {
                 rules={rules}
                 defaultValue=""
                 render={({ field: { onChange, value, ref } }) => (
-                    <EcSelect
+                    <UiSelect
                     open={false} selectedValues={value}
                     handleChange={onChange}
                     {...ref}

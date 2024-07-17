@@ -1,5 +1,5 @@
 import React from 'react';
-export interface EcDrawerProps {
+export interface UiDrawerProps {
     title: string;
     open: boolean;
     onClick: () => void;

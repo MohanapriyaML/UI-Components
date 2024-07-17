@@ -1,6 +1,6 @@
 import { CheckboxProps as MUICheckboxProps } from '@mui/material/Checkbox';
 
-export type UpCheckBoxProps = {
+export type UiCheckBoxProps = {
     label: string;
     name?: string;
     checked: boolean;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface EcLinkProps {
+export interface UiLinkProps {
     underlineOnHover?: boolean;
     className?: string;
     children: string | React.ReactNode;
