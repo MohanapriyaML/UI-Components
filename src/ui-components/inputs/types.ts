@@ -1,6 +1,6 @@
 import { InputHTMLAttributes } from 'react';
 
-export interface EcInputProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface UiInputProps extends InputHTMLAttributes<HTMLInputElement> {
     id?: string;
     placeholder?: string;
     fullWidth?: boolean;

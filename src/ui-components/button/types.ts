@@ -1,6 +1,6 @@
 import { ButtonProps as MUIButtonProps } from '@mui/material';
 
-export type UpButtonProps = Pick<
+export type UiButtonProps = Pick<
   MUIButtonProps,
   | 'size'
   | 'variant'

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Controller } from 'react-hook-form';
 import { IconButton, InputAdornment, TextField } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
-import { EcFormsProps } from './types';
-import EcInput from '../inputs/EcInputs';
+import { UiFormsProps } from './types';
+import UiInput from '../inputs/UiInputs';
 
-const FormPassword = (props: EcFormsProps) => {
+const FormPassword = (props: UiFormsProps) => {
   const { control, rules, errorText, name } = props;
 
   const [showPassword, setShowPassword] = useState(false);
@@ -23,7 +23,7 @@ const FormPassword = (props: EcFormsProps) => {
       rules={rules}
       defaultValue=""
       render={({ field: { onChange, value, ref } }) => (
-        <EcInput
+        <UiInput
           {...ref}
           fullWidth
           type={showPassword ? 'text' : 'password'}

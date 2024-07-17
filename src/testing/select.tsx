@@ -1,6 +1,6 @@
 import { SelectChangeEvent } from '@mui/material';
 import React, { useState } from 'react';
-import EcSelect from '../ui-components/select/EcSelect';
+import UiSelect from '../ui-components/select/UiSelect';
 
 const SelectComponent = () => {
   const [selectedValues, setSelectedValues] = useState<string[]>(['option1']);
@@ -28,7 +28,7 @@ const SelectComponent = () => {
   return (
     <div>
       <h1>Select</h1>
-      <EcSelect
+      <UiSelect
         data-testid="select-menu"
         id="select-menu"
         options={options}

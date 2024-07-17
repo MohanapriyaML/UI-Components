@@ -1,6 +1,6 @@
 import React from 'react';
 import { buttonProp } from '../ui-components/dropdown/types';
-import EcDropDown from '../ui-components/dropdown/EcDropDown';
+import UiDropDown from '../ui-components/dropdown/UiDropDown';
 
 const Dropdown = () => {
     const dropdownItems = [
@@ -17,7 +17,7 @@ const Dropdown = () => {
     return (
         <div>
             <h1>Drop Down</h1>
-            <EcDropDown items={dropdownItems} button={buttonData} />
+            <UiDropDown items={dropdownItems} button={buttonData} />
         </div>
     );
 };

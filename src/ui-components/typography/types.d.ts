@@ -17,7 +17,7 @@ export type Variants =
     | 'p-xxs'
     | 'CTA';
 
-export type EcTypographyProps = {
+export type UiTypographyProps = {
     variant: Variants;
     decoration?: 'underline' | 'none';
     fontStyle?: 'italic' | 'normal';

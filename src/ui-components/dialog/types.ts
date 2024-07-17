@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface EcDialogProps {
+export interface UiDialogProps {
     children: string | React.ReactNode;
     open: boolean;
     handleClose: () => void;

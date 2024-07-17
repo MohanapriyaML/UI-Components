@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 import React, { useState } from 'react'
-import EcPopOver from '../ui-components/popover/EcPopOver';
+import UiPopOver from '../ui-components/popover/UiPopOver';
 
 const Popover = () => {
     const [isOpen,setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ const Popover = () => {
     <div>
         <h1>PopOver</h1>
         <Button onClick={handleOpen}>Open Popover</Button>
-        <EcPopOver id="popover-menu" open={isOpen} onClose={handleClose} anchorEl={anchorEl}>PopOver content</EcPopOver>
+        <UiPopOver id="popover-menu" open={isOpen} onClose={handleClose} anchorEl={anchorEl}>PopOver content</UiPopOver>
     </div>
   )
 }

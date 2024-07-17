@@ -1,12 +1,14 @@
+"use client"
 import React, { useState } from "react";
 import { Link, Typography } from "@mui/material";
-import EcAccordion from "../ui-components/accordion/EcAccordion";
-import EcAlert from "../ui-components/alert/EcAlert";
-import EcBreadcrumbs from "../ui-components/breadcrumbs/EcBreadcrumbs";
-import EcButton from "../ui-components/button/EcButton";
-import EcCheckbox from "../ui-components/checkbox/EcCheckbox";
-import EcCollapse from "../ui-components/collapse/EcCollapse";
-import EcRadioButton from "../ui-components/radio/EcRadio";
+import UiAccordion from "../ui-components/accordion/UiAccordion";
+import UiAlert from "../ui-components/alert/UiAlert";
+import UiBreadcrumbs from "../ui-components/breadcrumbs/UiBreadcrumbs";
+import UiCheckbox from "../ui-components/checkbox/UiCheckbox";
+import UiCollapse from "../ui-components/collapse/UiCollapse";
+import UiRadioButton from "../ui-components/radio/UiRadio";
+import UiButton from "../ui-components/button/UiButton";
+
 
 const TestComponent = () => {
   const [isChecked, setIsChecked] = useState(false);
@@ -39,7 +41,7 @@ const TestComponent = () => {
     <div>
       <div>
         <Typography variant="h5">Breadcrumbs</Typography>
-        <EcBreadcrumbs separator="/" ariaLabel="breadcrumb">
+        <UiBreadcrumbs separator="/" ariaLabel="breadcrumb">
           <Link href="/" color="inherit">
             Home
           </Link>
@@ -49,32 +51,32 @@ const TestComponent = () => {
           <Link href="/contact" color="inherit">
             Contact
           </Link>
-        </EcBreadcrumbs>
+        </UiBreadcrumbs>
       </div>
       <br />
       <div>
         <Typography variant="h5">Accordion</Typography>
-        <EcAccordion
+        <UiAccordion
           id="accordion1"
           title="Accordion 1"
           expanded={true}
           onAccordionHandler={handleAccordionChange}
         >
           <Typography>Content for Accordion 1</Typography>
-        </EcAccordion>
-        <EcAccordion
+        </UiAccordion>
+        <UiAccordion
           id="accordion2"
           title="Accordion 2"
           expanded={false}
           onAccordionHandler={handleAccordionChange}
         >
           <Typography>Content for Accordion 2</Typography>
-        </EcAccordion>
+        </UiAccordion>
       </div>
       <br />
       <div>
         {alertVisible && (
-          <EcAlert
+          <UiAlert
             title="Error Alert"
             severity="warning"
             color="error"
@@ -82,20 +84,20 @@ const TestComponent = () => {
             onClose={handleCloseAlert}
           >
             <Typography>Alert content goes here.</Typography>
-          </EcAlert>
+          </UiAlert>
         )}
       </div>
       <br />
       <div>
         <Typography variant="h5">Button</Typography>
-        <EcButton variant="outlined" color="success" onClick={handleClick}>
+        <UiButton variant="outlined" color="success" onClick={handleClick}>
           <Typography>Click ME</Typography>
-        </EcButton>
+        </UiButton>
       </div>
       <br />
       <div>
         <Typography variant="h5">Checkbox</Typography>
-        <EcCheckbox
+        <UiCheckbox
           label="Sample Checkbox"
           checked={isChecked}
           onChange={handleCheckboxChange}
@@ -104,33 +106,33 @@ const TestComponent = () => {
       <br />
       <div>
         <Typography variant="h5">Collapse</Typography>
-        <EcCollapse
+        <UiCollapse
           expanded={expanded}
           title="Collapse Example"
           onToggle={handleCollapse}
           secondaryAction={
-            <EcButton
+            <UiButton
               onClick={handleCollapse}
               variant="outlined"
               color="success"
             >
               <Typography>Toggle Collapse</Typography>
-            </EcButton>
+            </UiButton>
           }
         >
           <Typography>Collapsed content goes here.</Typography>
-        </EcCollapse>
+        </UiCollapse>
       </div>
       <br />
       <div>
         <Typography variant="h5">Radio Button</Typography>
-        <EcRadioButton
+        <UiRadioButton
           name="radio-buttons-group"
           value="option1"
           isSelectedValue={selectedRadio}
           setSelectedValue={setSelectedRadio}
         />
-        <EcRadioButton
+        <UiRadioButton
           name="radio-buttons-group"
           value="option2"
           isSelectedValue={selectedRadio}

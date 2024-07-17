@@ -4,7 +4,7 @@ export type ImageSizeProps = Omit<'width' | 'height'> & {
     height?: number | string;
 };
 
-export type EcImageProps = {
+export type UiImageProps = {
     alt: string;
     className?: string;
     fill?: boolean;

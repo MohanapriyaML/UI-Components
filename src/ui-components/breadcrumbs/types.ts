@@ -1,13 +1,5 @@
-import { ReactNode } from "react";
-
-export type EcBreadcrumbsProps = {
+export type UiBreadcrumbsProps = {
     ariaLabel?: string;
     separator: string; 
-    children: React.ReactNode;
-    // breadcrumbs: breadcrumProps[]; 
+    children: React.ReactNode; 
 };
-
-// export type breadcrumProps =  {
-//     id:string,
-//     name:string
-// }

@@ -1,5 +1,5 @@
 import { SelectChangeEvent } from '@mui/material';
-export interface EcSelectProps {
+export interface UiSelectProps {
     id: string;                   
     options: OptionsProps[];
     open: boolean;      

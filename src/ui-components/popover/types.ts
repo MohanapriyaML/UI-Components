@@ -1,6 +1,6 @@
 import React from 'react';
 
-export interface EcPopoverProps {
+export interface UiPopoverProps {
     id: string;
     onClose: () => void;
     handlMouseEnter?: () => void;
