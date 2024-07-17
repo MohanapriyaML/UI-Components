@@ -2,11 +2,11 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
-import { EcAccordionProps } from "./types";
+import { UiAccordionProps } from "./types";
 import { Typography } from "@mui/material";
 import React from "react";
 
-const UiAccordion = ({ id = 'Ec Accordion', title, children }: EcAccordionProps) => {
+const UiAccordion = ({ id = 'Ec Accordion', title, children }: UiAccordionProps) => {
   return (
     <Accordion>
       <AccordionSummary
