@@ -1,7 +1,6 @@
 {
-  "name": "ui-components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "genpixels_ui_components",
+  "version": "0.0.3",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +16,7 @@
     "@emotion/styled": "^11.11.5",
     "@mui/icons-material": "^5.16.4",
     "@mui/material": "^5.16.4",
+    "genpixels_ui_components": "^0.0.3",
     "mui-phone-number": "^3.0.3",
     "next": "14.2.5",
     "react": "^18",
@@ -49,5 +49,9 @@
     "ts-jest": "^29.2.2",
     "ts-node": "^10.9.2",
     "typescript": "^5"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "src/ui-components",
+  "author": "genpixels",
+  "license": "ISC"
 }
