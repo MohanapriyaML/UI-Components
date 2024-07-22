@@ -1,26 +1,23 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
 import UiImage from './UiImage';
-const TestComponent = () => {
-    return (
-        <UiImage
-            src="/test-image.jpg"
-            height={100}
-            width={100}
-            alt="Test Image"
-            fill={false}
-            priority={true}
-        />
-    );
-};
-describe('EcImage Component', () => {
-    test('renders image with given props', () => {
-        render(<TestComponent />);
-        const imageElement = screen.getByAltText('Test Image');
-        expect(imageElement).toBeInTheDocument();
-        expect(imageElement).toHaveAttribute('src');
-        expect(imageElement.getAttribute('src')).toContain('/_next/image?');
-        expect(imageElement).toHaveAttribute('width', '100');
-        expect(imageElement).toHaveAttribute('height', '100');
-    });
+
+describe('UiImage Component', () => {
+  test('renders an image with the correct src, height, width, and alt attributes', () => {
+    const props = {
+      src: 'https://example.com/image.jpg',
+      height: '200',
+      width: '300',
+      alt: 'Example image',
+    };
+
+    render(<UiImage {...props} />);
+    const image = screen.getByRole('img');
+    
+    expect(image).toHaveAttribute('src', props.src);
+    expect(image).toHaveAttribute('height', props.height);
+    expect(image).toHaveAttribute('width', props.width);
+    expect(image).toHaveAttribute('alt', props.alt);
+  });
 });
