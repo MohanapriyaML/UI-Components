@@ -34,7 +34,7 @@ const TestComponent = () => {
   };
 
   const handleClick = () => {
-    console.log("Button clicked!");
+    alert("clicked")
   };
 
   return (

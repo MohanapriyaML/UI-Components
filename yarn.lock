@@ -5628,6 +5628,22 @@ functions-have-names@^1.2.3:
   resolved "https://registry.npmjs.org/functions-have-names/-/functions-have-names-1.2.3.tgz"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
+genpixels_ui_components@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/genpixels_ui_components/-/genpixels_ui_components-0.0.3.tgz#fc65f6ee156e5023f22666ef558d66506a797cc7"
+  integrity sha512-kw5J3itayu3BsO0mb/nP2VaVqeS6qz+oN51MQ7CLGH96i6DHgN30QWv2c/IjHtDQ1mke+TZyqS6XQpSz8/OpMg==
+  dependencies:
+    "@emotion/react" "^11.11.4"
+    "@emotion/styled" "^11.11.5"
+    "@mui/icons-material" "^5.16.4"
+    "@mui/material" "^5.16.4"
+    mui-phone-number "^3.0.3"
+    next "14.2.5"
+    react "^18"
+    react-dom "^18"
+    react-hook-form "^7.52.1"
+    styled-components "^6.1.11"
+
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
